@@ -1,0 +1,30 @@
+.starter-template {
+	width: 50%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.result {
+	background: #eff0f1;
+	margin: auto;
+}
+
+.hidden {
+	display: none;
+}
+
+.p0 {
+	padding: 0;
+}
+
+@media (min-width: 768px) {
+  .starter-template {
+    width: 100%;
+  }
+}
+
+@media (min-width: 992px) {
+  .starter-template {
+    width: 700px;
+  }
+}
