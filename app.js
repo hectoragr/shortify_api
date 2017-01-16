@@ -62,6 +62,16 @@ app.get('/:hash_id', function(req, res){
   });
 });
 
+app.get('/api/all', function(req, res){
+  Url.find().where("visible", true).exec(function(err, doc) {
+    if (doc) {
+      res.json(doc);
+    }else {
+      res.status(404).send("No records found!");
+    }
+  });
+});
+
 var server = app.listen(3000, function(){
   console.log('Server listening on port 3000');
 });
